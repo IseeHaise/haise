@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./code.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div>
+    <nav class="navbar">
+      <div class="logo"><a href="#">Haise</a></div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <header>
+      <div class="hero-content" id="home">
+        <h1>Welcome to my Simple Website!</h1><br />
+        <p>
+          I'm Hyacinth Petilo <br />
+          Student from National College of Science and Technology
+        </p>
+        <a href="Cv.pdf" target="_blank" class="button">My CV</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="main">
+        <img src="./images/qq.jpg" alt="Hyacinth Petilo" />
+        <div class="about-text">
+          <h1>About Me</h1>
+          <p>
+            My name is Hyacinth Petilo from Bacoor Cavite Philippines and I'm
+            competitive player in Pokemon Unite
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="service-box">
+        <h3>Soft Skill</h3><br />
+        <p>TeamWork, Communication & Problem-solving</p>
+      </div>
+      <div class="service-box">
+        <h3>Hard Skill</h3><br />
+        <p>Programming Languages (Coding)</p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="contact">
+      <h3>Message me to test my skills</h3>
+      <form id="contactForm" novalidate>
+        <div>
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+        <div>
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="button">Send Message</button>
+      </form>
+
+      <div style="margin-top: 20px;">
+        <h4>
+          <a href="mailto:petilo.hyacinth@ncst.edu.ph" target="_blank"
+            >Email</a
+          >
+        </h4>
+        <h4>
+          <a
+            href="https://www.facebook.com/share/19GQ6Lava3/"
+            target="_blank"
+            >Facebook</a
+          >
+        </h4>
+      </div>
+    </section>
+  </div>
+
+  <footer>&copy; 2025 My Portfolio. All Rights Reserved.</footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

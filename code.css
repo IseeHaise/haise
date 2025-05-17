@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 1000;
+    transition: background 0.3s;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a:hover,
+  .logo a:hover {
+    color: blue;
+  }
+  
+  .nav-links a.active {
+    color: rgb(0, 106, 255);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 106, 255);
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    animation: fadeIn 3s ease-in-out;
+    background-image: url(images/aa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header h1,
+  p {
+    color: white;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  .hero-content h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 10s;
+    font-weight: bold;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .about {
+    width: 100%;
+    padding: 78px 0px;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about img {
+    height: auto;
+    width: 330px;
+    border-radius: 5px;
+  }
+  
+  .about-text {
+    width: 550px;
+    border-radius: 5px;
+    padding: 30px 20px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .about-text h1 {
+    color: rgb(0, 106, 255);
+    font-size: 60px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+  }
+  
+  .about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  
+  section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .animated-image {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .animated-image:hover {
+    transform: scale(1.1);
+  }
+  
+  #skills {
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #skills li {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #skills h2 {
+    margin-top: 30px;
+    color: rgb(0, 106, 255);
+  }
+  
+  .service-box {
+    background: #474747;
+    padding: 20px 10px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s ease;
+    cursor: default;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  #contact {
+    background: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  #contact h4 a {
+    color: rgb(0, 106, 255);
+    text-decoration: none;
+  }
+  
+  /* Contact Form Styles */
+  #contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+  }
+  
+  #contact form div {
+    margin-bottom: 15px;
+  }
+  
+  #contact form
+  label {
+    color: rgb(0, 106, 255);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    }
+    
+    #contact form input,
+    #contact form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+    }
+    
+    #contact form input:focus,
+    #contact form textarea:focus {
+    outline: none;
+    border-color: rgb(0, 106, 255);
+    }
+    
+    #contact form button.button {
+    background: rgb(0, 106, 255);
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    }
+    
+    #contact form button.button:hover {
+    background: rgb(0, 80, 190);
+    }
+    
+    footer {
+    text-align: center;
+    padding: 15px 0;
+    background: black;
+    color: white;
+    font-size: 16px;
+    }
+    
+    /* Responsive */
+    
+    @media (max-width: 768px) {
+    .nav-links {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.9);
+    }
+    
+    .nav-links.open {
+    max-height: 200px;
+    }
+    
+    .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+    }
+    
+    .hamburger {
+    display: block;
+    }
+    
+    .main {
+    flex-direction: column;
+    }
+    
+    .about-text {
+    width: 90%;
+    text-align: center;
+    }
+    
+    #skills {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    #contact form {
+    max-width: 90%;
+    }
+    }
